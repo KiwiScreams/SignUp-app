@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+
+<body>
+  <div class="main-container flex"><!-- Sign up panel starts -->
+    <div class="text-container"><!-- text panel starts -->
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly <br> updates on:</p>
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+      <div class="input-container"><!-- image panel starts -->
+        <div class="validation flex">
+          <h6>Email address</h6>
+          <h6 class="error" id="error">Valid email required</h6>
+        </div>
+        <input type="email" name="email" id="email" placeholder="email@company.com" onkeydown="emailValidation()">
+        <button id="submit" onclick="location.href='panel.html'">Subscribe to monthly newsletter</button>
+      </div><!-- image panel ends -->
+    </div><!-- text panel ends -->
+    <div class="image-container">
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="image">
+    </div>
+  </div><!-- Sign up panel ends -->
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="#">Salome Papashvili</a>.</p>
+  </div>
+  <script src="js/emailValidation.js"></script>
+</body>
+
+</html>
