@@ -7,15 +7,16 @@
     <title>Success</title>
 </head>
 <body>
-    <div class="panel-container">
+    <div class="panel-container"><!-- panel container starts -->
         <div class="success-panel">
             <img src="assets/images/icon-list.svg" alt="icon">
         </div>
-        <div class="text-content">
+        <div class="text-content"><!-- text content starts -->
             <h1>Thanks for <br> subscribing!</h1>
-            <p>A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
-            <button>Dismiss message</button>
-        </div>
-    </div>
+            <p>A confirmation email has been sent to <span id="emailAddress"></span>. Please open it and click the button inside to confirm your subscription.</p>
+            <button onclick="location.href='index.html'">Dismiss message</button>
+        </div><!-- text content ends -->
+    </div><!-- panel container ends -->
+    <script src="js/showEmail.js"></script>
 </body>
 </html>

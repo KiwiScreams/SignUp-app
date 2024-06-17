@@ -27,6 +27,7 @@
     --grey-clr: #9294a0;
     --tomato-clr: #ff6257;
     --vermellion-clr: #FF6155;
+    --shadow-clr: #00000040;
     /* FONT-SIZE */
     --fontSize-56px: 56px;
     --fontSize-16px: 16px;
@@ -56,7 +57,7 @@ body
     border-radius: var(--borderRadius-20px);
     margin: 0 auto;
     width: 928px;
-    box-shadow: 0 15px 60px 0 #000000;
+    box-shadow: 0 15px 60px 0 var(--shadow-clr);
 }
 .main-container .text-container
 {
@@ -140,7 +141,7 @@ button:disabled
 }
 .panel-container
 {
-    box-shadow: 0 15px 60px 0 #000000;
+    box-shadow: 0 15px 60px 0 var(--shadow-clr);
     padding: 48px 64px 64px 64px;
     background-color: var(--white-clr);
     border-radius: var(--borderRadius-20px);
@@ -167,4 +168,19 @@ button:disabled
 .attribution a, .attribution p
 {
     color: var(--white-clr);
+}
+@media only screen and (max-width: 375px)
+{
+    .flex
+    {
+        flex-direction: column-reverse;
+    }
+    .main-container .text-container
+    {
+        width: 100%;
+    }
+    .image-container{
+        width: 100%;
+        margin-top: -100px;
+    }
 }
