@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="main-container flex"><!-- Sign up panel starts -->
+  <div class="main-container flex reverse"><!-- Sign up panel starts -->
     <div class="text-container"><!-- text panel starts -->
       <h1>Stay updated!</h1>
       <p>Join 60,000+ product managers receiving monthly <br> updates on:</p>
@@ -21,20 +21,21 @@
       </ul>
       <div class="input-container"><!-- image panel starts -->
         <div class="validation flex">
-          <h6>Email address</h6>
+          <label for="email">Email address</label>
           <h6 class="error" id="error">Valid email required</h6>
         </div>
-        <input type="email" name="email" id="email" placeholder="email@company.com" oninput="emailValidation()">
+        <input type="email" name="email" id="email" placeholder="email@company.com" oninput="emailValidation()" required>
         <button id="submit" disabled>Subscribe to monthly newsletter</button>
       </div><!-- image panel ends -->
     </div><!-- text panel ends -->
-    <div class="image-container">
-      <img src="assets/images/illustration-sign-up-desktop.svg" alt="image">
-    </div>
+    <picture class="image-container">
+      <source media="(max-width:426px)" srcset="/assets/images/illustration-sign-up-mobile.svg">
+      <img src="/assets/images/illustration-sign-up-desktop.svg">
+    </picture>
   </div><!-- Sign up panel ends -->
   <div class="attribution">
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
-    <p>Coded by <a href="#">Salome Papashvili</a>.</p>
+    <p>Coded by <a href="https://github.com/KiwiScreams?tab=repositories">Salome Papashvili</a>.</p>
   </div>
   <script src="js/emailValidation.js"></script>
 </body>

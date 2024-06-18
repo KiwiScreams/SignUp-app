@@ -5,8 +5,7 @@ const submitButton = document.getElementById("submit");//Submit button
 let borderError = `1px solid #FF6155`;
 let border = `1px solid #9294a0`;
 //
-function emailValidation()
-{
+function emailValidation() {
     if (!emailInput.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/))
     {
         emailError.style.visibility = "visible";
@@ -22,7 +21,7 @@ function emailValidation()
         submitButton.disabled = false;
     }
 }
-submitButton.addEventListener("click", function()
+submitButton.addEventListener("click", function ()
 {
     let email = emailInput.value;
     const successPage = `panel.html?email=${email}`;
