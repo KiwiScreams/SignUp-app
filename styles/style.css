@@ -299,7 +299,6 @@ button:disabled
     #panel
     {
         height: 100vh;
-        overflow: hidden;
     }
     .panel-container .text-content button
     {
